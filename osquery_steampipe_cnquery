@@ -1,0 +1,7 @@
+osqueryi "select * from uptime" --json
+osqueryi "select * from groups" --json
+{"osqueryAllProcesses": "osqueryi \"select pid,name, path from processes\", "nature": "json"}
+steampipe query "select * from aws_s3_bucket limit 5;" --output json
+cnquery run -c "ports.listening { port process }" --json
+cnquery run aws -c aws.ec2.instances --json
+{ "osqueryAllUsers": "osqueryi \"SELECT * from users\" --json", "nature": "json" }
